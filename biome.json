@@ -1,0 +1,57 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "organizeImports": {
+    "enabled": true,
+    "include": []
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120,
+    "attributePosition": "auto",
+    "ignore": ["node_modules", ".next", "build", "public", ".vscode", ".git", "dist"]
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off",
+        "noShadowRestrictedNames": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off",
+        "noUnusedImports": "error"
+      },
+      "complexity": {
+        "noForEach": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "noUnusedTemplateLiteral": "off",
+        "useTemplate": "off",
+        "noUselessElse": "off"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "noSvgWithoutTitle": "off"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
+      }
+    },
+    "ignore": ["node_modules", ".next", "build", "public", ".vscode", ".git", "dist"]
+  }
+}
