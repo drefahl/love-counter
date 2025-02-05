@@ -28,7 +28,7 @@ export function LoveMessages() {
 
   return (
     <div className="text-center space-y-6">
-      <div className="relative min-h-[120px]">
+      <div className="relative min-h-[120px] flex items-center justify-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentMessage}
@@ -53,7 +53,7 @@ export function LoveMessages() {
                 />
               </svg>
 
-              <p className="text-xl md:text-2xl font-medium text-pink-900 italic px-4 font-dancing mt-2">
+              <p className="text-xl lg:text-2xl font-medium text-pink-900 italic px-4 font-dancing mt-2">
                 "{messages[currentMessage]}"
               </p>
             </div>
@@ -65,7 +65,7 @@ export function LoveMessages() {
         onClick={nextMessage}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300 text-sm md:text-base flex items-center gap-2 mx-auto"
+        className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300 text-sm lg:text-base flex items-center gap-2 mx-auto"
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />

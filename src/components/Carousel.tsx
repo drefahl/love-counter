@@ -32,12 +32,12 @@ export function Carousel() {
   if (images.length === 0) return null
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-screen">
       <UiCarousel opts={{ loop: true }} plugins={[Autoplay({ delay: 5000 })]} className="w-full h-full">
         <CarouselContent className="h-full">
           {images.map((image, index) => (
             <CarouselItem key={index} className="w-full h-screen">
-              <div className="relative w-full h-full min-h-[400px] md:min-h-0 flex items-center justify-center">
+              <div className="relative w-full h-full min-h-[400px] lg:min-h-0 flex items-center justify-center">
                 <Image
                   src={image}
                   alt={`Slide ${index + 1}`}

@@ -43,7 +43,7 @@ export function Timer({ startDate }: { startDate: string }) {
         >
           <div className="relative p-4 bg-white rounded-2xl shadow-lg border border-pink-100">
             <motion.span
-              className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent"
+              className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent"
               key={value}
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
