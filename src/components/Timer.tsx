@@ -8,7 +8,8 @@ export function Timer({ startDate }: { startDate: string }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const start = new Date(startDate).getTime()
+      const [year, month, day] = startDate.split("-")
+      const start = new Date(Number(year), Number(month) - 1, Number(day)).getTime()
       const now = new Date().getTime()
       const difference = now - start
 
